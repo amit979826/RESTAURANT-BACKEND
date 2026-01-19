@@ -1,20 +1,4 @@
 {
-<<<<<<< HEAD
- "version": 2,
- "builds": [
-  {
-   "src": "server.js",
-   "use": "@vercel/node",
-   "config": { "includeFiles": ["dist/**"] }
-  }
- ],
- "routes": [
-  {
-   "src": "/(.*)",
-   "dest": "server.js"
-  }
- ]
-=======
   "version": 2,
   "builds": [
     {
@@ -28,5 +12,4 @@
       "dest": "server.js"
     }
   ]
->>>>>>> bd7c455 (Fix CORS for Vercel frontend)
 }
