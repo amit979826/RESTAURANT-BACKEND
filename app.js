@@ -14,10 +14,14 @@ app.use(
       "https://restaurant-frontend-five-xi.vercel.app",
       "http://localhost:5173"
     ],
-    methods: ["POST", "GET"],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true,
   })
 );
+
+// IMPORTANT: handle preflight
+app.options("*", cors());
+
 
 
 app.get("/", (req, res) => {
